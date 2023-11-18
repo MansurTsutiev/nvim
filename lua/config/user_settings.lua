@@ -61,3 +61,28 @@ vim.api.nvim_set_keymap('i', 'cc', '●', { noremap = true, expr = false, silent
 vim.api.nvim_set_keymap('i', 'nn', '★', { noremap = true, expr = false, silent = true })
 vim.api.nvim_set_keymap('i', 'erb', '<% %>', { noremap = true, expr = false, silent = true })
 vim.api.nvim_set_keymap('i', 'erbb', '<%= %>', { noremap = true, expr = false, silent = true })
+
+
+
+-- Theme settings
+vim.opt.background = 'dark'
+
+-- Enable true color in Neovim TUI
+if vim.fn.has('nvim') == 1 then
+  vim.fn['system']('export NVIM_TUI_ENABLE_TRUE_COLOR=1')
+end
+
+-- Enable termguicolors if supported
+if vim.fn.has('termguicolors') == 1 then
+  vim.opt.termguicolors = true
+end
+
+-- CUSTOM COMMANDS & FUNCTIONS
+vim.opt.clipboard = 'unnamedplus'
+-- Define custom command Cp
+vim.cmd('command! Cp call system("pbcopy",@")')
+-- Define custom command Kb
+vim.cmd('command! Kb %bd|e#')
+vim.opt.regexpengine = 1
+vim.opt.showmode = false
+vim.opt.synmaxcol = 200
