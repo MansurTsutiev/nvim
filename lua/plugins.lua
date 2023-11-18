@@ -5,6 +5,7 @@ local plugins = {
     'joukevandermaas/vim-ember-hbs',
     'tpope/vim-rhubarb',
     'vim-airline/vim-airline',
+    'akinsho/bufferline.nvim',
     {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',
       dependencies = { 'nvim-lua/plenary.nvim' }
@@ -15,5 +16,7 @@ local plugins = {
     },
 }
 
+
 local opts = {}
 require("lazy").setup(plugins, opts)
+
