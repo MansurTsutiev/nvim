@@ -6,9 +6,10 @@ require("conform").setup({
     -- Use a sub-list to run only the first available formatter
     javascript = { { "prettierd", "prettier" } },
     javascriptreact = { { "prettierd", "prettier" } },
-
+    ruby = { "rubocop" }, -- Add RuboCop for Ruby files
   },
-  format_on_save = { -- These options will be passed to conform.format() timeout_ms = 500,
+  format_on_save = { -- These options will be passed to conform.format() 
+    timeout_ms = 1000,
     lsp_fallback = true,
   },
 })
