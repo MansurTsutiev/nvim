@@ -7,6 +7,7 @@ local plugins = {
     'vim-airline/vim-airline',
     'akinsho/bufferline.nvim',
     'stevearc/conform.nvim',
+    "numToStr/Comment.nvim",
     { "lukas-reineke/indent-blankline.nvim", main = "ibl" },
     {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',
