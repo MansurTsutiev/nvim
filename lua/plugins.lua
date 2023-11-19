@@ -7,6 +7,7 @@ local plugins = {
     'vim-airline/vim-airline',
     'akinsho/bufferline.nvim',
     'stevearc/conform.nvim',
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl" },
     {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',
       dependencies = { 'nvim-lua/plenary.nvim' }
@@ -20,5 +21,4 @@ local plugins = {
 
 local opts = {}
 require("lazy").setup(plugins, opts)
-
 

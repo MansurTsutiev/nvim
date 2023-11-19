@@ -1,6 +1,7 @@
 {
   "bufferline.nvim": { "branch": "main", "commit": "9e8d2f695dd50ab6821a6a53a840c32d2067a78a" },
   "conform.nvim": { "branch": "master", "commit": "a36c68d2cd551e49883ddb2492c178d915567f58" },
+  "indent-blankline.nvim": { "branch": "master", "commit": "29be0919b91fb59eca9e90690d76014233392bef" },
   "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
   "nvim-web-devicons": { "branch": "master", "commit": "e2f6e0e299e193d7e9c48634d355f7a6eb3020b4" },
   "palenight.vim": { "branch": "master", "commit": "5552a6349bcd927df9f17db34f017b77b963e503" },
