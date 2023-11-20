@@ -53,14 +53,8 @@ vim.api.nvim_set_keymap('n', 'L', '$', {})
 vim.api.nvim_set_keymap('o', 'p', 'i(', {})
 
 -- Custom abbreviations
-vim.api.nvim_set_keymap('i', 'raa', 'return assert.async();', { noremap = true, expr = false, silent = true })
 vim.api.nvim_set_keymap('i', 'bp', 'binding.pry', { noremap = true, expr = false, silent = true })
 vim.api.nvim_set_keymap('i', 'bb', 'binding.break', { noremap = true, expr = false, silent = true })
-vim.api.nvim_set_keymap('i', 'vv', '✔', { noremap = true, expr = false, silent = true })
-vim.api.nvim_set_keymap('i', 'cc', '●', { noremap = true, expr = false, silent = true })
-vim.api.nvim_set_keymap('i', 'nn', '★', { noremap = true, expr = false, silent = true })
-vim.api.nvim_set_keymap('i', 'erb', '<% %>', { noremap = true, expr = false, silent = true })
-vim.api.nvim_set_keymap('i', 'erbb', '<%= %>', { noremap = true, expr = false, silent = true })
 
 
 
