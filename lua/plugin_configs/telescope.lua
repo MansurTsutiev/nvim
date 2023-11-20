@@ -1,4 +1,6 @@
-require('telescope').setup{
+local telescope = require('telescope')
+
+telescope.setup{
   pickers = {
     find_files = {
       theme = "dropdown",
@@ -26,6 +28,6 @@ vim.keymap.set('n', ',fg', builtin.live_grep, {})
 vim.keymap.set('n', ',fe', ":Telescope file_browser<CR>", { noremap = true })
 
 
-require("telescope").load_extension "file_browser"
-require('telescope').load_extension('fzf')
+telescope.load_extension "file_browser"
+telescope.load_extension('fzf')
 
