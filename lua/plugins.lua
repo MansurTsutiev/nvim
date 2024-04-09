@@ -1,4 +1,5 @@
 local plugins = {
+    'nvim-tree/nvim-tree.lua',
     'nvim-tree/nvim-web-devicons',
     'drewtempelmeyer/palenight.vim',
     'tpope/vim-fugitive',
@@ -8,15 +9,13 @@ local plugins = {
     'akinsho/bufferline.nvim',
     'stevearc/conform.nvim',
     "numToStr/Comment.nvim",
+    "pangloss/vim-javascript", -- js syntax highlight
+    "maxmellon/vim-jsx-pretty", -- jsx syntax highlight
     { "lukas-reineke/indent-blankline.nvim", main = "ibl" },
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',
       dependencies = { 'nvim-lua/plenary.nvim' }
-    },
-    {
-      "nvim-telescope/telescope-file-browser.nvim",
-      dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
     },
     "hrsh7th/nvim-cmp", -- completion plugin
     "hrsh7th/cmp-buffer", -- source for text in buffer
