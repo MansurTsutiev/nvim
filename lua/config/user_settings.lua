@@ -53,7 +53,7 @@ vim.api.nvim_set_keymap('n', 'L', '$', {})
 vim.api.nvim_set_keymap('o', 'p', 'i(', {})
 
 -- NvimTree mappings
-vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeFocus<CR>', { silent = true })
+vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
 
 -- Custom abbreviations
 vim.api.nvim_set_keymap('i', 'bp', 'binding.pry', { noremap = true, expr = false, silent = true })
