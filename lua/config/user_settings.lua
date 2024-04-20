@@ -74,4 +74,9 @@ vim.cmd('command! Kb %bd|e#')
 vim.opt.regexpengine = 0 --use default syntax highlighting engine 
 vim.opt.showmode = false -- show INSER/NORMAL mode
 vim.opt.synmaxcol = 200 -- max columns to be syntax highlighted
-vim.g.loaded_pythonx_provider = 0
+
+-- Python
+vim.g.loaded_pythonx_provider = 0 -- disable python 2 provider
+vim.g.python3_host_prog = '$HOME/.pyenv/shims/python3' -- speed up nvim start up time
+
+
