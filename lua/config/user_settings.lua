@@ -83,3 +83,5 @@ vim.cmd('command! Kb %bd|e#')
 vim.opt.regexpengine = 1
 vim.opt.showmode = false
 vim.opt.synmaxcol = 200
+
+vim.g.loaded_pythonx_provider = 0
