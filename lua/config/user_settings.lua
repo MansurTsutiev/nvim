@@ -1,6 +1,5 @@
 -- nvim configuration:
 vim.g.mapleader = ","
-vim.cmd('syntax enable')
 vim.cmd('set autoindent')
 vim.cmd('set expandtab')
 vim.cmd('set shiftwidth=2')
@@ -12,7 +11,6 @@ vim.cmd('set splitbelow')
 vim.cmd('set number')
 vim.cmd('set splitright')
 vim.cmd('set mouse=a')
--- vim.cmd('set spell spelllang=en_us')
 vim.cmd('set hlsearch')
 vim.cmd('hi clear SpellBad')
 vim.cmd('hi SpellBad cterm=underline')
@@ -24,7 +22,6 @@ vim.cmd('set nofixeol')
 
 -- Custom mappings
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>sv', ':source $MYVIMRC<CR>', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>r', ':vertical resize +20<CR>', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>rr', ':vertical resize -20<CR>', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>v', ':resize +10<CR>', { silent = true })
@@ -44,7 +41,6 @@ vim.api.nvim_set_keymap('n', '<leader>z', '<C-z>', {})
 vim.api.nvim_set_keymap('n', '<leader><c-u>', 'viwU', {})
 vim.api.nvim_set_keymap('n', '<leader>ev', ':split ~/.config/nvim/init.vim<CR>', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>td', ':split ~/.mans_box/todo.md<CR>', { silent = true })
-vim.api.nvim_set_keymap('n', '<leader>es', ':source $MYVIMRC<CR>', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>q', 'viw<Esc>a"<Esc>bi"<Esc>lel', {})
 vim.api.nvim_set_keymap('n', '<leader>qq', 'viw<Esc>lxbhxe', {})
 vim.api.nvim_set_keymap('v', '<leader>q', '<ESC>`>a"<ESC>`<i"<ESC>', {})
@@ -58,11 +54,6 @@ vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
 -- Custom abbreviations
 vim.api.nvim_set_keymap('i', 'bp', 'binding.pry', { noremap = true, expr = false, silent = true })
 vim.api.nvim_set_keymap('i', 'bb', 'binding.break', { noremap = true, expr = false, silent = true })
-
-
-
--- Theme settings
-vim.opt.background = 'dark'
 
 -- Enable true color in Neovim TUI
 if vim.fn.has('nvim') == 1 then
@@ -83,5 +74,4 @@ vim.cmd('command! Kb %bd|e#')
 vim.opt.regexpengine = 0 --use default syntax highlighting engine 
 vim.opt.showmode = false -- show INSER/NORMAL mode
 vim.opt.synmaxcol = 200 -- max columns to be syntax highlighted
-
 vim.g.loaded_pythonx_provider = 0
