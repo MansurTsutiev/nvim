@@ -3,15 +3,14 @@ local plugins = {
     'nvim-tree/nvim-web-devicons',
     'drewtempelmeyer/palenight.vim',
     'tpope/vim-fugitive',
-    'joukevandermaas/vim-ember-hbs',
     'tpope/vim-rhubarb',
     'vim-airline/vim-airline',
     'akinsho/bufferline.nvim',
     'stevearc/conform.nvim',
     "numToStr/Comment.nvim",
-    "pangloss/vim-javascript", -- js syntax highlight
-    "maxmellon/vim-jsx-pretty", -- jsx syntax highlight
-    { "lukas-reineke/indent-blankline.nvim", main = "ibl" },
+    -- "pangloss/vim-javascript", -- js syntax highlight
+    -- "maxmellon/vim-jsx-pretty", -- jsx syntax highlight
+    -- { "lukas-reineke/indent-blankline.nvim", main = "ibl" },
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     {
       'nvim-telescope/telescope.nvim', tag = '0.1.4',

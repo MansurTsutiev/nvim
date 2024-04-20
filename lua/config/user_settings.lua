@@ -12,7 +12,7 @@ vim.cmd('set splitbelow')
 vim.cmd('set number')
 vim.cmd('set splitright')
 vim.cmd('set mouse=a')
-vim.cmd('set spell spelllang=en_us')
+-- vim.cmd('set spell spelllang=en_us')
 vim.cmd('set hlsearch')
 vim.cmd('hi clear SpellBad')
 vim.cmd('hi SpellBad cterm=underline')
@@ -80,8 +80,8 @@ vim.opt.clipboard = 'unnamedplus'
 vim.cmd('command! Cp call system("pbcopy",@")')
 -- Define custom command Kb
 vim.cmd('command! Kb %bd|e#')
-vim.opt.regexpengine = 1
-vim.opt.showmode = false
-vim.opt.synmaxcol = 200
+vim.opt.regexpengine = 0 --use default syntax highlighting engine 
+vim.opt.showmode = false -- show INSER/NORMAL mode
+vim.opt.synmaxcol = 200 -- max columns to be syntax highlighted
 
 vim.g.loaded_pythonx_provider = 0
