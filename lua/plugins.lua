@@ -11,9 +11,9 @@ local plugins = {
     -- "pangloss/vim-javascript", -- js syntax highlight
     -- "maxmellon/vim-jsx-pretty", -- jsx syntax highlight
     -- { "lukas-reineke/indent-blankline.nvim", main = "ibl" },
-    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+    -- { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     {
-      'nvim-telescope/telescope.nvim', tag = '0.1.4',
+      'nvim-telescope/telescope.nvim', tag = '0.1.6',
       dependencies = { 'nvim-lua/plenary.nvim' }
     },
     -- "hrsh7th/nvim-cmp", -- completion plugin

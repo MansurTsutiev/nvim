@@ -51,6 +51,10 @@ vim.api.nvim_set_keymap('o', 'p', 'i(', {})
 -- NvimTree mappings
 vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
 
+-- Telescope mappings
+vim.keymap.set('n', ',f', ':Telescope find_files<CR>', {})
+
+
 -- Custom abbreviations
 vim.api.nvim_set_keymap('i', 'bp', 'binding.pry', { noremap = true, expr = false, silent = true })
 vim.api.nvim_set_keymap('i', 'bb', 'binding.break', { noremap = true, expr = false, silent = true })
