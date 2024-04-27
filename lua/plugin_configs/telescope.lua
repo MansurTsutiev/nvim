@@ -5,7 +5,10 @@ telescope.setup{
     find_files = {
       theme = "dropdown",
       max_results = 100,
-
+    },
+    live_grep = {
+      theme = "dropdown",
+      max_results = 100,
     }
   },
   extensions = {}

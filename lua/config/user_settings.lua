@@ -19,6 +19,7 @@ vim.cmd('hi Search ctermfg=Red')
 vim.cmd('set statusline=')
 vim.cmd('set wrap linebreak nolist')
 vim.cmd('set nofixeol')
+vim.cmd('set nofixeol')
 
 -- Custom mappings
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true })
@@ -49,7 +50,7 @@ vim.api.nvim_set_keymap('n', 'L', '$', {})
 vim.api.nvim_set_keymap('o', 'p', 'i(', {})
 
 -- NvimTree mappings
-vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
+vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeFindFileToggle<CR>', { silent = true })
 
 -- Telescope mappings
 vim.keymap.set('n', ',f', ':Telescope find_files<CR>', {})
