@@ -52,8 +52,13 @@ vim.api.nvim_set_keymap('o', 'p', 'i(', {})
 -- NvimTree mappings
 vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeFindFileToggle<CR>', { silent = true })
 
--- Telescope mappings
-vim.keymap.set('n', ',f', ':Telescope find_files<CR>', {})
+-- source nvimrc
+local function source_init_lua()
+  vim.cmd('source ~/.config/nvim/init.lua')
+  print("init.lua reloaded")
+end
+vim.keymap.set('n', '<leader>e', source_init_lua, { noremap = true, silent = true })
+
 
 
 -- Custom abbreviations

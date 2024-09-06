@@ -14,3 +14,4 @@ telescope.setup{
   extensions = {}
 }
 
+vim.keymap.set('n', ',f', ':Telescope find_files<CR>', {})

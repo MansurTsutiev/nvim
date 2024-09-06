@@ -6,10 +6,7 @@ require("nvim-tree").setup({
     sorter = "case_sensitive",
   },
   view = {
-    width = 30,
-  },
-  renderer = {
-    group_empty = true,
+    width = 40,
   },
   filters = {
     dotfiles = false,
@@ -23,3 +20,15 @@ require("nvim-tree").setup({
     },
   },
 })
+
+
+-- Set the color for folder names
+vim.api.nvim_set_hl(0, 'NvimTreeFolderName', { fg = '#61afef' })
+
+-- Set the color for open folder names
+vim.api.nvim_set_hl(0, 'NvimTreeOpenedFolderName', { fg = '#98c379' })
+
+-- Set the color for the root folder name
+vim.api.nvim_set_hl(0, 'NvimTreeRootFolder', { fg = '#61afef' })
+
+
