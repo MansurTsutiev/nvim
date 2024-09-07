@@ -4,7 +4,6 @@ local plugins = {
     'drewtempelmeyer/palenight.vim',
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
-    'vim-airline/vim-airline',
     "numToStr/Comment.nvim",
     {
       'nvim-telescope/telescope.nvim', tag = '0.1.6',
