@@ -6,13 +6,12 @@ local plugins = {
     'tpope/vim-rhubarb',
     'vim-airline/vim-airline',
     'akinsho/bufferline.nvim',
-    'stevearc/conform.nvim',
     "numToStr/Comment.nvim",
     {
       'nvim-telescope/telescope.nvim', tag = '0.1.6',
       dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    {'romgrk/barbar.nvim',
+    {'romgrk/barbar.nvim', -- tabs ui
       dependencies = {
         'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
         'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
