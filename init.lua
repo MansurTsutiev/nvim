@@ -13,6 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("plugins")
-require("plugin_configs")
 require("config.user_settings")
+require("plugin_configs")
 
