@@ -5,7 +5,6 @@ local plugins = {
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
     'vim-airline/vim-airline',
-    'akinsho/bufferline.nvim',
     "numToStr/Comment.nvim",
     {
       'nvim-telescope/telescope.nvim', tag = '0.1.6',
