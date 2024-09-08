@@ -3,6 +3,7 @@ local plugins = {
   { "williamboman/mason.nvim" }, -- manages language servers
   { "williamboman/mason-lspconfig.nvim" }, -- bridges gap between mason and lspconfig
   { "neovim/nvim-lspconfig" }, -- sends messages from nvim to language servers
+  { 'stevearc/conform.nvim' }, -- formats code
   { 'nvim-tree/nvim-tree.lua' },
   { 'nvim-tree/nvim-web-devicons' }, -- icons for nvimtree and barbar
   { 'tpope/vim-fugitive' }, -- Git commands (blame, browse)
