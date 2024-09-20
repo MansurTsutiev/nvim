@@ -23,6 +23,7 @@ conform.setup({
 		javascriptreact = { "prettierd", stop_after_first = true },
 		typescriptreact = { "prettierd", stop_after_first = true }, -- For TSX files
 		ruby = { "rubocop" },
+		eruby = { "erb_format" },
 	},
 })
 
