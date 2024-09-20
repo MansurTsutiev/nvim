@@ -49,6 +49,10 @@ vim.api.nvim_set_keymap("n", "H", "^", {})
 vim.api.nvim_set_keymap("n", "L", "$", {})
 vim.api.nvim_set_keymap("o", "p", "i(", {})
 
+-- Rails
+vim.api.nvim_set_keymap("i", "<C-e>", "<%= %><Esc>hi", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<C-r>", "<% %><Esc>hi", { noremap = true, silent = true })
+
 -- NvimTree mappings
 vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeFindFileToggle<CR>", { silent = true })
 
