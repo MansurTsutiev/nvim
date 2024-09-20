@@ -1,12 +1,14 @@
 -- LINTING
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "tsserver" },
+	ensure_installed = { "lua_ls", "tsserver", "solargraph" },
 })
 
 local lspconfig = require("lspconfig")
 lspconfig.lua_ls.setup({})
 lspconfig.ts_ls.setup({}) -- this uses tsserver
+lspconfig.solargraph.setup({})
+
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { noremap = true, silent = false })
 
 -- FORMATTING
@@ -20,6 +22,7 @@ conform.setup({
 		typescript = { "prettierd", stop_after_first = true },
 		javascriptreact = { "prettierd", stop_after_first = true },
 		typescriptreact = { "prettierd", stop_after_first = true }, -- For TSX files
+		ruby = { "rubocop" },
 	},
 })
 
