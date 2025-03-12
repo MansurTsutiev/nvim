@@ -64,6 +64,7 @@ end
 vim.keymap.set("n", "<leader>e", source_init_lua, { noremap = true, silent = true })
 
 -- Custom abbreviations
+vim.api.nvim_set_keymap("i", "ccc", "console.log();<Left><Left>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "bp", "binding.pry", { noremap = true, expr = false, silent = true })
 vim.api.nvim_set_keymap("i", "bb", "binding.break", { noremap = true, expr = false, silent = true })
 
