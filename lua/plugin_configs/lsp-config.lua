@@ -31,6 +31,9 @@ conform.setup({
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function(args)
-		conform.format({ bufnr = args.buf })
+		local bufname = vim.api.nvim_buf_get_name(args.buf)
+		if not bufname:match("^" .. vim.fn.expand("$HOME") .. "/mi/movableink/") then
+			conform.format({ bufnr = args.buf })
+		end
 	end,
 })
