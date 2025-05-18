@@ -49,6 +49,9 @@ vim.api.nvim_set_keymap("n", "H", "^", {})
 vim.api.nvim_set_keymap("n", "L", "$", {})
 vim.api.nvim_set_keymap("o", "p", "i(", {})
 
+-- Paste over selection without overwriting the clipboard: Shift + p
+vim.keymap.set("x", "P", '"_dP', { noremap = true, silent = true })
+
 -- Rails
 vim.api.nvim_set_keymap("i", "<C-e>", "<%= %><Esc>hi", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<C-r>", "<% %><Esc>hi", { noremap = true, silent = true })
