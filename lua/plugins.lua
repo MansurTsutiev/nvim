@@ -6,7 +6,6 @@ local plugins = {
 	{ "stevearc/conform.nvim" }, -- formats code
 	{ "nvim-tree/nvim-tree.lua" },
 	{ "nvim-tree/nvim-web-devicons" }, -- icons for nvimtree and barbar
-	{ "tpope/vim-fugitive" }, -- Git commands (blame, browse)
 	{ "tpope/vim-rhubarb" }, -- opens github for GBrowse
 	{ "numToStr/Comment.nvim" },
 	{
@@ -18,7 +17,7 @@ local plugins = {
 	{
 		"romgrk/barbar.nvim", -- tabs ui
 		dependencies = {
-			"lewis6991/gitsigns.nvim", -- OPTIONAL: for git status
+			"lewis6991/gitsigns.nvim", -- Git diff, blame, etc
 		},
 		init = function()
 			vim.g.barbar_auto_setup = false
