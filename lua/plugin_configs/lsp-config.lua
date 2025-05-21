@@ -1,7 +1,8 @@
 -- LINTING
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "tsserver", "solargraph" },
+  automatic_enable = false,
+	ensure_installed = { "lua_ls", "ts_ls", "solargraph" },
 })
 
 local lspconfig = require("lspconfig")
