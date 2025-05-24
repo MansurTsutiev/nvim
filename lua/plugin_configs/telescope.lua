@@ -19,6 +19,7 @@ telescope.setup({
 	},
 	pickers = {
 		find_files = {
+			hidden = true, -- 👈 this includes dotfiles
 			previewer = false,
 			sorting_strategy = "ascending",
 			prompt_position = "top",
