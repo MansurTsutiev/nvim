@@ -3,11 +3,7 @@ local builtin = require("telescope.builtin")
 
 telescope.setup({
 	defaults = {
-		winblend = 0, -- 👈 prevents ghosted or non-rendered results
-		scroll_strategy = "cycle", -- default is "limit"
-
 		layout_strategy = "vertical",
-		layout_config = { height = 0.95 },
 		vimgrep_arguments = {
 			"rg",
 			"--color=never",
@@ -24,28 +20,19 @@ telescope.setup({
 		find_files = {
 			hidden = true, -- 👈 this includes dotfiles
 			previewer = false,
-			sorting_strategy = "ascending",
-			prompt_position = "top",
-			layout_config = { prompt_position = "top" },
 		},
 		live_grep = {
 			layout_strategy = "vertical",
-			layout_config = {
-				prompt_position = "top", -- Search bar at the top
-				preview_height = 0.5, -- Preview window takes 50% of the height at the bottom
-				mirror = true, -- This flips the layout to put the preview at the bottom
-			},
-			sorting_strategy = "ascending", -- Results start just below the prompt
 		},
 	},
-	extensions = {
-		fzf = {
-			fuzzy = true,
-			override_generic_sorter = true,
-			override_file_sorter = true,
-			case_mode = "smart_case",
-		},
-	},
+	-- extensions = {
+	-- 	fzf = {
+	-- 		fuzzy = true,
+	-- 		override_generic_sorter = true,
+	-- 		override_file_sorter = true,
+	-- 		case_mode = "smart_case",
+	-- 	},
+	-- },
 })
 
 require("telescope").load_extension("fzf")
