@@ -3,6 +3,9 @@ local builtin = require("telescope.builtin")
 
 telescope.setup({
 	defaults = {
+		winblend = 0, -- 👈 prevents ghosted or non-rendered results
+		scroll_strategy = "cycle", -- default is "limit"
+
 		layout_strategy = "vertical",
 		layout_config = { height = 0.95 },
 		vimgrep_arguments = {
