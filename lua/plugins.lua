@@ -4,7 +4,6 @@ local plugins = {
 	{ "williamboman/mason-lspconfig.nvim" }, -- bridges gap between mason and lspconfig
 	{ "neovim/nvim-lspconfig" }, -- sends messages from nvim to language servers
 	{ "stevearc/conform.nvim" }, -- formats code
-	{ "nvim-tree/nvim-tree.lua" },
 	{ "nvim-tree/nvim-web-devicons" }, -- icons for nvimtree and barbar
 	{ "tpope/vim-rhubarb" }, -- opens github for GBrowse
 	{ "numToStr/Comment.nvim" },
@@ -24,6 +23,17 @@ local plugins = {
 		end,
 		opts = {},
 		version = "^1.0.0", -- optional: only update when a new 1.x version is released
+	},
+	{
+		"stevearc/oil.nvim",
+		---@module 'oil'
+		---@type oil.SetupOpts
+		opts = {},
+		-- Optional dependencies
+		-- dependencies = { { "echasnovski/mini.icons", opts = {} } },
+		-- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
+		-- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
+		lazy = false,
 	},
 }
 

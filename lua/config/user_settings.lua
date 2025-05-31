@@ -56,9 +56,6 @@ vim.keymap.set("x", "P", '"_dP', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<C-e>", "<%= %><Esc>hi", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<C-r>", "<% %><Esc>hi", { noremap = true, silent = true })
 
--- NvimTree mappings
-vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeFindFileToggle<CR>", { silent = true })
-
 -- source nvimrc
 local function source_init_lua()
 	vim.cmd("source ~/.config/nvim/init.lua")
