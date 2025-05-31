@@ -26,16 +26,29 @@ conform.setup({
 		ruby = { "rubocop" },
 		eruby = { "htmlbeautifier" },
 	},
+	formatters = {
+		rubocop = {
+			command = "bundle",
+			args = {
+				"exec",
+				"rubocop",
+				"--auto-correct",
+				"--stdin",
+				"$FILENAME", -- current filename to format
+				"--format",
+				"emacs", -- emacs format is easy for tools to parse, can also use "json"
+				"--stderr", -- Sends non-code output (warnings, errors) to stderr
+			},
+			stdin = true,
+			cwd = require("conform.util").root_file({ "Gemfile", ".rubocop.yml" }),
+		},
+	},
 })
 
 -- autoformat on save
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function(args)
-		local bufname = vim.api.nvim_buf_get_name(args.buf)
 		conform.format({ bufnr = args.buf })
-		-- if not bufname:match("^" .. vim.fn.expand("$HOME") .. "/mi/movableink/") then
-		-- 	conform.format({ bufnr = args.buf })
-		-- end
 	end,
 })
