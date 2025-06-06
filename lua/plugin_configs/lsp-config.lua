@@ -50,5 +50,9 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function(args)
 		conform.format({ bufnr = args.buf })
+		-- local cwd = vim.fn.getcwd()
+		-- if not cwd:match("movableink$") then
+		-- 	conform.format({ bufnr = args.buf })
+		-- end
 	end,
 })
