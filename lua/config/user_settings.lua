@@ -67,8 +67,8 @@ vim.keymap.set("n", "<leader>e", source_init_lua, { noremap = true, silent = tru
 -- Custom abbreviations
 vim.api.nvim_set_keymap("i", "ccc", "console.log();<Left><Left>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "bp", "binding.pry", { noremap = true, expr = false, silent = true })
-vim.api.nvim_set_keymap("i", "bb", "binding.break", { noremap = true, expr = false, silent = true })
 vim.api.nvim_set_keymap("i", "<leader>c", "✔︎", { noremap = true, expr = false, silent = true })
+vim.api.nvim_set_keymap("i", "<leader>w", "►", { noremap = true, expr = false, silent = true })
 
 -- Enable true color in Neovim TUI
 if vim.fn.has("nvim") == 1 then
