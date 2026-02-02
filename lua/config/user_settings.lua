@@ -23,8 +23,6 @@ vim.cmd("set nofixeol")
 
 -- Custom mappings
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>r", ":vertical resize +20<CR>", { silent = true })
-vim.api.nvim_set_keymap("n", "<leader>rr", ":vertical resize -20<CR>", { silent = true })
 vim.api.nvim_set_keymap("n", "<leader>v", ":resize +10<CR>", { silent = true })
 vim.api.nvim_set_keymap("n", "<leader>vv", ":resize -10<CR>", { silent = true })
 vim.api.nvim_set_keymap("n", "<leader>ns", ":set nospell<CR>", { silent = true })
